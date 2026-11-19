@@ -343,6 +343,7 @@ def make_fig4(raw: pd.DataFrame) -> None:
     features = ACCEPTED_FEATURES
     x = np.arange(len(features))
     width = 0.34
+    all_deltas = []
     for index, (baseline, color, label) in enumerate(
         [
             ("raw_missing", METHOD_COLOR["SAITS"], "vs raw missing"),
@@ -358,6 +359,7 @@ def make_fig4(raw: pd.DataFrame) -> None:
                 (raw.method == baseline) & (raw.feature == feature)
             ].set_index("seed").macro_f1
             deltas.append(float((cross - base).mean()))
+        all_deltas.extend(deltas)
         ax.bar(
             x + (index - 0.5) * width,
             deltas,
@@ -373,7 +375,14 @@ def make_fig4(raw: pd.DataFrame) -> None:
     ax.set_title("(b) Accepted profiles", loc="left", pad=3)
     ax.grid(axis="y", color="#E1E1E1", linewidth=0.45)
     ax.set_axisbelow(True)
-    ax.legend(frameon=False, loc="upper left")
+    ax.set_ylim(0, max(max(all_deltas) * 1.42, 0.02))
+    ax.legend(
+        frameon=False,
+        loc="upper left",
+        borderaxespad=0.25,
+        labelspacing=0.35,
+        handlelength=1.5,
+    )
     save_figure(fig, "fig4_downstream")
 
 
