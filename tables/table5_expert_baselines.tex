@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Same-gate profile-expert controls. All methods use the same fit
+wells, sampled rows, release decisions and test masks. Values are
+mean$\pm$standard deviation of selective MAE over 25 fold-seed units. HGB is
+the expert used by the proposed operator.}
+\label{tab:expert-baselines}
+\centering
+\scriptsize
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Dataset & Ridge & Random Forest & XGBoost & HGB \\
+\midrule
+Taranaki & 0.3679$\pm$0.0215 & 0.3651$\pm$0.0185 & 0.3537$\pm$0.0179 & 0.3498$\pm$0.0185 \\
+Geolink & 0.3821$\pm$0.0120 & 0.3456$\pm$0.0185 & 0.3398$\pm$0.0246 & 0.3355$\pm$0.0223 \\
+\bottomrule
+\end{tabular}}
+\end{table}

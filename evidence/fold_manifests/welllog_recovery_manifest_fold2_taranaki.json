@@ -1,0 +1,302 @@
+{
+  "datasets": [
+    "taranaki"
+  ],
+  "seeds": 5,
+  "masks_per_seed": 5,
+  "epochs": 100,
+  "patience": 15,
+  "alpha": 0.1,
+  "fold": 2,
+  "elapsed_seconds": 2442.5075838999473,
+  "torch": "2.15.0+cu132",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 3090 Ti",
+  "runs": [
+    {
+      "dataset": "taranaki",
+      "seed": 0,
+      "train_sequences": 4669,
+      "calibration_sequences": 1042,
+      "validation_sequences": 1415,
+      "train_seconds": 663.7969399000285,
+      "prediction_seconds": 59.10067760007223,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.14028257131576538,
+        "single:1": 0.10430681705474854,
+        "single:2": 0.09065735340118408,
+        "block20:0": 0.3935002088546753,
+        "block20:1": 0.24426788091659546,
+        "block20:2": 0.34946078062057495,
+        "block100:0": 0.6566813588142395,
+        "block100:1": 0.4439476728439331,
+        "block100:2": 0.6062947511672974,
+        "profile:0": 1.3528549671173096,
+        "profile:1": 0.5978178381919861,
+        "profile:2": 0.7390839457511902
+      },
+      "calibration_counts": {
+        "single:0": 2084,
+        "single:1": 2084,
+        "single:2": 2084,
+        "block20:0": 41680,
+        "block20:1": 41680,
+        "block20:2": 41680,
+        "block100:0": 208400,
+        "block100:1": 208400,
+        "block100:2": 208400,
+        "profile:0": 533504,
+        "profile:1": 533504,
+        "profile:2": 533504
+      },
+      "tau_accept": 0.5990893751382828,
+      "tau_recover": 1.0152809053659435,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.2552556399718614,
+          "target_std": 0.9406593441963196,
+          "condition_proxy": 0.7447443600281386
+        },
+        "1": {
+          "cross_log_r2": 0.6960750276938692,
+          "target_std": 0.8926151990890503,
+          "condition_proxy": 0.3039249723061308
+        },
+        "2": {
+          "cross_log_r2": 0.6927275030521178,
+          "target_std": 0.9342675805091858,
+          "condition_proxy": 0.30727249694788217
+        }
+      }
+    },
+    {
+      "dataset": "taranaki",
+      "seed": 1,
+      "train_sequences": 4673,
+      "calibration_sequences": 1038,
+      "validation_sequences": 1415,
+      "train_seconds": 215.77697509998688,
+      "prediction_seconds": 62.11056319990894,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.16155695915222168,
+        "single:1": 0.053276896476745605,
+        "single:2": 0.06201434135437012,
+        "block20:0": 0.7376503944396973,
+        "block20:1": 0.3435065746307373,
+        "block20:2": 0.6408514976501465,
+        "block100:0": 1.356808066368103,
+        "block100:1": 0.6735477447509766,
+        "block100:2": 1.0529752969741821,
+        "profile:0": 1.2778183221817017,
+        "profile:1": 0.7396640777587891,
+        "profile:2": 0.7412129640579224
+      },
+      "calibration_counts": {
+        "single:0": 2076,
+        "single:1": 2076,
+        "single:2": 2076,
+        "block20:0": 41520,
+        "block20:1": 41520,
+        "block20:2": 41520,
+        "block100:0": 207600,
+        "block100:1": 207600,
+        "block100:2": 207600,
+        "profile:0": 531456,
+        "profile:1": 531456,
+        "profile:2": 531456
+      },
+      "tau_accept": 0.7398964107036591,
+      "tau_recover": 1.3133637070655821,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.3277800331312145,
+          "target_std": 0.9271153211593628,
+          "condition_proxy": 0.6722199668687855
+        },
+        "1": {
+          "cross_log_r2": 0.7004079193397585,
+          "target_std": 0.844965398311615,
+          "condition_proxy": 0.29959208066024146
+        },
+        "2": {
+          "cross_log_r2": 0.6977468072375934,
+          "target_std": 0.91258305311203,
+          "condition_proxy": 0.3022531927624066
+        }
+      }
+    },
+    {
+      "dataset": "taranaki",
+      "seed": 2,
+      "train_sequences": 4602,
+      "calibration_sequences": 1109,
+      "validation_sequences": 1415,
+      "train_seconds": 613.311185300001,
+      "prediction_seconds": 60.11719069996616,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.08763211965560913,
+        "single:1": 0.0669945478439331,
+        "single:2": 0.07296174764633179,
+        "block20:0": 0.5294381380081177,
+        "block20:1": 0.36523985862731934,
+        "block20:2": 0.4142497777938843,
+        "block100:0": 1.0448884963989258,
+        "block100:1": 0.7229399681091309,
+        "block100:2": 0.6264039278030396,
+        "profile:0": 1.2591125965118408,
+        "profile:1": 0.6034530401229858,
+        "profile:2": 0.7072741389274597
+      },
+      "calibration_counts": {
+        "single:0": 2218,
+        "single:1": 2218,
+        "single:2": 2218,
+        "block20:0": 44360,
+        "block20:1": 44360,
+        "block20:2": 44360,
+        "block100:0": 221800,
+        "block100:1": 221800,
+        "block100:2": 221800,
+        "profile:0": 567808,
+        "profile:1": 567808,
+        "profile:2": 567808
+      },
+      "tau_accept": 0.6385344594717026,
+      "tau_recover": 1.1412893414497374,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.2590506713650713,
+          "target_std": 0.9378699660301208,
+          "condition_proxy": 0.7409493286349287
+        },
+        "1": {
+          "cross_log_r2": 0.7007799056883264,
+          "target_std": 0.8908986449241638,
+          "condition_proxy": 0.2992200943116736
+        },
+        "2": {
+          "cross_log_r2": 0.7037272722367076,
+          "target_std": 0.9442643523216248,
+          "condition_proxy": 0.2962727277632924
+        }
+      }
+    },
+    {
+      "dataset": "taranaki",
+      "seed": 3,
+      "train_sequences": 4637,
+      "calibration_sequences": 1074,
+      "validation_sequences": 1415,
+      "train_seconds": 195.39711710001575,
+      "prediction_seconds": 30.18108869995922,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.0943942666053772,
+        "single:1": 0.07069766521453857,
+        "single:2": 0.06620419025421143,
+        "block20:0": 0.5897027254104614,
+        "block20:1": 0.36842525005340576,
+        "block20:2": 0.5280622243881226,
+        "block100:0": 1.2159706354141235,
+        "block100:1": 0.8191050291061401,
+        "block100:2": 1.0394179821014404,
+        "profile:0": 1.4014736413955688,
+        "profile:1": 0.7199041843414307,
+        "profile:2": 0.7962583303451538
+      },
+      "calibration_counts": {
+        "single:0": 2148,
+        "single:1": 2148,
+        "single:2": 2148,
+        "block20:0": 42960,
+        "block20:1": 42960,
+        "block20:2": 42960,
+        "block100:0": 214800,
+        "block100:1": 214800,
+        "block100:2": 214800,
+        "profile:0": 549888,
+        "profile:1": 549888,
+        "profile:2": 549888
+      },
+      "tau_accept": 0.7996853351593017,
+      "tau_recover": 1.2994469881057737,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.23784034436157875,
+          "target_std": 0.9221609830856323,
+          "condition_proxy": 0.7621596556384213
+        },
+        "1": {
+          "cross_log_r2": 0.7110454331300293,
+          "target_std": 0.8634488582611084,
+          "condition_proxy": 0.2889545668699707
+        },
+        "2": {
+          "cross_log_r2": 0.712457668344068,
+          "target_std": 0.9133715629577637,
+          "condition_proxy": 0.287542331655932
+        }
+      }
+    },
+    {
+      "dataset": "taranaki",
+      "seed": 4,
+      "train_sequences": 4603,
+      "calibration_sequences": 1108,
+      "validation_sequences": 1415,
+      "train_seconds": 387.4344006999745,
+      "prediction_seconds": 29.436823199910577,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.05456721782684326,
+        "single:1": 0.035761892795562744,
+        "single:2": 0.03850819170475006,
+        "block20:0": 0.45200634002685547,
+        "block20:1": 0.24833351373672485,
+        "block20:2": 0.3996772766113281,
+        "block100:0": 0.9445071220397949,
+        "block100:1": 0.616293728351593,
+        "block100:2": 0.7552589178085327,
+        "profile:0": 1.3073601722717285,
+        "profile:1": 0.6768757700920105,
+        "profile:2": 0.7666580677032471
+      },
+      "calibration_counts": {
+        "single:0": 2216,
+        "single:1": 2216,
+        "single:2": 2216,
+        "block20:0": 44320,
+        "block20:1": 44320,
+        "block20:2": 44320,
+        "block100:0": 221600,
+        "block100:1": 221600,
+        "block100:2": 221600,
+        "profile:0": 567296,
+        "profile:1": 567296,
+        "profile:2": 567296
+      },
+      "tau_accept": 0.6886332422494889,
+      "tau_recover": 1.1077909946441649,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.2541089645425788,
+          "target_std": 0.9374041557312012,
+          "condition_proxy": 0.7458910354574212
+        },
+        "1": {
+          "cross_log_r2": 0.6498974169628691,
+          "target_std": 0.8895716071128845,
+          "condition_proxy": 0.35010258303713093
+        },
+        "2": {
+          "cross_log_r2": 0.6783752454786486,
+          "target_std": 0.943422794342041,
+          "condition_proxy": 0.3216247545213514
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+\begin{table}
+\caption{Whole-profile missingness over five folds, five seeds and five masks.
+Values are mean$\pm$standard deviation over fold-seed units. Coverage is the
+full-test empirical interval coverage and includes deferred cases in its
+denominator. Outside rate is the share of released pattern-feature groups whose
+error lies outside the calibrated interval. Holm tests compare fold-seed
+selective MAE with SAITS.}
+\label{tab:profile}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4.2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llccccccc@{}}
+\toprule
+Dataset & Method & Selective MAE & Coverage & Defer & Outside & $\Delta$ vs SAITS & Holm $p$ & Folds \\
+\midrule
+Taranaki & SAITS & 0.7302$\pm$0.0442 & -- & 0.0\% & -- & -- & -- & -- \\
+Taranaki & Same gate, no expert & 0.6906$\pm$0.0550 & 0.6633$\pm$0.0444 & 34.7\% & 0.4112$\pm$0.0455 & -- & -- & -- \\
+Taranaki & Proposed & 0.3498$\pm$0.0185 & 0.8947$\pm$0.0204 & 34.7\% & 0.1023$\pm$0.0243 & -0.3805 & $9.54\times10^{-7}$ & 5/5 \\
+\addlinespace[2pt]
+Geolink & SAITS & 0.6029$\pm$0.0289 & -- & 0.0\% & -- & -- & -- & -- \\
+Geolink & Same gate, no expert & 0.7664$\pm$0.0576 & 0.6941$\pm$0.0273 & 50.0\% & 0.5308$\pm$0.0514 & -- & -- & -- \\
+Geolink & Proposed & 0.3355$\pm$0.0223 & 0.8918$\pm$0.0220 & 50.0\% & 0.1130$\pm$0.0314 & -0.2674 & $9.54\times10^{-7}$ & 5/5 \\
+\addlinespace[2pt]
+Teapot & SAITS & 0.4312$\pm$0.0419 & -- & 0.0\% & -- & -- & -- & -- \\
+Teapot & Same gate, no expert & -- & 0.8182$\pm$0.0852 & 100.0\% & -- & -- & -- & -- \\
+Teapot & Proposed & all deferred & 0.8868$\pm$0.0658 & 100.0\% & -- & -- & -- & -- \\
+\addlinespace[2pt]
+\bottomrule
+\end{tabular*}
+\end{table}

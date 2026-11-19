@@ -98,6 +98,22 @@ python make_downstream_summary.py
 
 The downstream script requires the FORCE archive described above.
 
+## Regenerate manuscript figures and tables
+
+The frozen evidence files used in the paper are included so that the reported
+figures and LaTeX tables can be regenerated without training a model:
+
+```bash
+python manuscript_assets/analyze_thresholds_and_bounds.py
+python manuscript_assets/make_assets.py
+```
+
+The first command rebuilds threshold-sensitivity and identifiability summaries.
+The second writes `figures/fig2_profile_recovery.*`,
+`figures/fig3_mechanism_boundary.*`, `figures/fig4_downstream.*`, and the
+manuscript tables under `tables/`. The scripts require the packages listed in
+`requirements.txt` and consume only files in `evidence/`.
+
 ## Outputs
 
 The recovery runner writes:
@@ -112,6 +128,10 @@ The downstream runner writes:
 - per-split raw-missing, mean-fill, cross-log and oracle metrics;
 - summary distributions;
 - paired split-level tests.
+
+The manuscript asset scripts write publication figures and LaTeX tables. These
+outputs are generated from frozen evidence; no numeric points are entered by
+hand.
 
 ## License
 

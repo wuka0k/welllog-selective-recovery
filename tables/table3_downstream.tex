@@ -1,0 +1,21 @@
+\begin{table}
+\caption{FORCE 2020 lithology audit over ten well-disjoint splits. Results
+average the three profiles accepted by the observability gate (RHOB, NPHI and
+DTC); GR is deferred in every split. Oracle uses complete four-log inputs.
+$\Delta$ and paired Wilcoxon tests compare cross-log recovery with each
+baseline over the ten splits.}
+\label{tab:downstream}
+\centering
+\footnotesize
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccccccc@{}}
+\toprule
+Input & Accuracy & Macro-F1 & Weighted-F1 &
+$\Delta$ raw & $p$ raw & $\Delta$ mean & $p$ mean \\
+\midrule
+Raw missing & 0.3824$\pm$0.0555 & 0.1344$\pm$0.0279 & 0.4188$\pm$0.0513 & -- & -- & -- & -- \\
+Mean fill & 0.3565$\pm$0.0450 & 0.1897$\pm$0.0260 & 0.4167$\pm$0.0432 & -- & -- & -- & -- \\
+Cross-log recovery & 0.4760$\pm$0.0437 & 0.2438$\pm$0.0367 & 0.5374$\pm$0.0363 & +0.1093 & 0.0020 & +0.0540 & 0.0020 \\
+Oracle complete & 0.4989$\pm$0.0443 & 0.2655$\pm$0.0393 & 0.5612$\pm$0.0398 & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular*}
+\end{table}

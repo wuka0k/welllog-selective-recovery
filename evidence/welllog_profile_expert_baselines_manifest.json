@@ -1,0 +1,30 @@
+{
+  "comparison": "same proposed-gate accepted units and test masks",
+  "methods": [
+    "Ridge",
+    "RandomForest",
+    "XGBoost",
+    "HGB"
+  ],
+  "datasets": [
+    "geolink",
+    "taranaki"
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "masks_per_seed": 5,
+  "elapsed_seconds": 1107.845802500029,
+  "note": "Ridge, RandomForest and XGBoost are model-family controls. They use the same fit wells, release decisions and masks as HGB."
+}

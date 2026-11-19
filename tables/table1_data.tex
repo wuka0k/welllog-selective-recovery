@@ -1,0 +1,19 @@
+\begin{table}
+\caption{Public datasets and evaluation roles. For Teapot, Taranaki and Geolink,
+well counts are training/validation; for FORCE they are
+training/calibration/test wells. Seeds and masks apply to the recovery benchmark;
+the FORCE audit uses ten well-disjoint splits.}
+\label{tab:data}
+\centering
+\footnotesize
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llccccc@{}}
+\toprule
+Dataset & Role & Wells & Logs & Folds & Seeds & Masks \\
+\midrule
+Teapot & Boundary & 67 / 19 & 3 & 5 & 5 & 5 \\
+Taranaki & Positive & 224 / 61 & 3 & 5 & 5 & 5 \\
+Geolink & Positive & 141 / 36 & 4 & 5 & 5 & 5 \\
+FORCE 2020 & Label audit & 58 / 19 / 21 & 4 & 10 & -- & -- \\
+\bottomrule
+\end{tabular*}
+\end{table}

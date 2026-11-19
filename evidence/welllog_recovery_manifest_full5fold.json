@@ -1,0 +1,31 @@
+{
+  "datasets": [
+    "geolink",
+    "taranaki",
+    "teapot"
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "masks_per_seed": 5,
+  "raw_rows": 25000,
+  "fold_seed_pairs_per_method_condition": 25,
+  "significant_holm": 21,
+  "benchmark_repository": "https://github.com/uai-ufmg/well-log-imputation",
+  "benchmark_commit": "e69031ad97e19f6e36c0dddfc3db68ca2ce03716",
+  "processed_data_doi": "10.5281/zenodo.10987946",
+  "processed_data_sha256": "67A659043770FAB643D60D4D8FD674DA50D178797F49E664D8C9ABDC532A7AA6",
+  "numeric_qa": "PASS",
+  "upstream_license": "not declared; GitHub license endpoint returns 404"
+}

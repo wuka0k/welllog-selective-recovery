@@ -1,0 +1,367 @@
+{
+  "datasets": [
+    "geolink"
+  ],
+  "seeds": 5,
+  "masks_per_seed": 5,
+  "epochs": 100,
+  "patience": 15,
+  "alpha": 0.1,
+  "fold": 3,
+  "elapsed_seconds": 1900.1189590999857,
+  "torch": "2.15.0+cu132",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 3090 Ti",
+  "runs": [
+    {
+      "dataset": "geolink",
+      "seed": 0,
+      "train_sequences": 2938,
+      "calibration_sequences": 902,
+      "validation_sequences": 1083,
+      "train_seconds": 503.2741971000214,
+      "prediction_seconds": 62.04240689962171,
+      "parameters": 1324080,
+      "radii": {
+        "single:0": 0.13720011711120605,
+        "single:1": 0.10636883974075317,
+        "single:2": 0.11145362257957458,
+        "single:3": 0.025416187942028046,
+        "block20:0": 0.5447783470153809,
+        "block20:1": 0.2669905424118042,
+        "block20:2": 0.38164830207824707,
+        "block20:3": 0.026780828833580017,
+        "block100:0": 0.9482537508010864,
+        "block100:1": 0.5629055500030518,
+        "block100:2": 0.6266210079193115,
+        "block100:3": 0.027373850345611572,
+        "profile:0": 1.4088292121887207,
+        "profile:1": 0.6406120657920837,
+        "profile:2": 0.751193642616272,
+        "profile:3": 0.18849734961986542
+      },
+      "calibration_counts": {
+        "single:0": 1804,
+        "single:1": 1804,
+        "single:2": 1804,
+        "single:3": 1804,
+        "block20:0": 36080,
+        "block20:1": 36080,
+        "block20:2": 36080,
+        "block20:3": 36080,
+        "block100:0": 180400,
+        "block100:1": 180400,
+        "block100:2": 180400,
+        "block100:3": 180400,
+        "profile:0": 461824,
+        "profile:1": 461824,
+        "profile:2": 461824,
+        "profile:3": 461824
+      },
+      "tau_accept": 0.558373749256134,
+      "tau_recover": 1.063397616147995,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.09728636081112696,
+          "target_std": 0.9287855625152588,
+          "condition_proxy": 0.902713639188873
+        },
+        "1": {
+          "cross_log_r2": 0.7867435823494257,
+          "target_std": 0.8638913035392761,
+          "condition_proxy": 0.21325641765057435
+        },
+        "2": {
+          "cross_log_r2": 0.7080708260760201,
+          "target_std": 0.8840194344520569,
+          "condition_proxy": 0.2919291739239799
+        },
+        "3": {
+          "cross_log_r2": -1.0,
+          "target_std": 0.7832388281822205,
+          "condition_proxy": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "geolink",
+      "seed": 1,
+      "train_sequences": 3022,
+      "calibration_sequences": 818,
+      "validation_sequences": 1083,
+      "train_seconds": 166.6719129999983,
+      "prediction_seconds": 60.46006750036031,
+      "parameters": 1324080,
+      "radii": {
+        "single:0": 0.19401490688323975,
+        "single:1": 0.06232738494873047,
+        "single:2": 0.07744300365447998,
+        "single:3": 0.029923617839813232,
+        "block20:0": 0.8119966387748718,
+        "block20:1": 0.4911395311355591,
+        "block20:2": 0.48386150598526,
+        "block20:3": 0.02850666642189026,
+        "block100:0": 1.2389366626739502,
+        "block100:1": 1.0610380172729492,
+        "block100:2": 0.7934956550598145,
+        "block100:3": 0.02522064745426178,
+        "profile:0": 1.3536787033081055,
+        "profile:1": 0.6395521759986877,
+        "profile:2": 0.7061099410057068,
+        "profile:3": 0.08105742186307907
+      },
+      "calibration_counts": {
+        "single:0": 1636,
+        "single:1": 1636,
+        "single:2": 1636,
+        "single:3": 1636,
+        "block20:0": 32720,
+        "block20:1": 32720,
+        "block20:2": 32720,
+        "block20:3": 32720,
+        "block100:0": 163600,
+        "block100:1": 163600,
+        "block100:2": 163600,
+        "block100:3": 163600,
+        "profile:0": 418816,
+        "profile:1": 418816,
+        "profile:2": 418816,
+        "profile:3": 418816
+      },
+      "tau_accept": 0.689470499753952,
+      "tau_recover": 1.267622172832489,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.1807805215466004,
+          "target_std": 0.9319477081298828,
+          "condition_proxy": 0.8192194784533996
+        },
+        "1": {
+          "cross_log_r2": 0.7992503715942835,
+          "target_std": 0.8767525553703308,
+          "condition_proxy": 0.20074962840571653
+        },
+        "2": {
+          "cross_log_r2": 0.7661183027923444,
+          "target_std": 0.8859412670135498,
+          "condition_proxy": 0.23388169720765561
+        },
+        "3": {
+          "cross_log_r2": -0.057897242909843216,
+          "target_std": 0.383628785610199,
+          "condition_proxy": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "geolink",
+      "seed": 2,
+      "train_sequences": 3067,
+      "calibration_sequences": 773,
+      "validation_sequences": 1083,
+      "train_seconds": 295.4588334999862,
+      "prediction_seconds": 60.181577300536446,
+      "parameters": 1324080,
+      "radii": {
+        "single:0": 0.16996979713439941,
+        "single:1": 0.08255523443222046,
+        "single:2": 0.10379934310913086,
+        "single:3": 0.014262877404689789,
+        "block20:0": 0.5488125085830688,
+        "block20:1": 0.3391645550727844,
+        "block20:2": 0.44018566608428955,
+        "block20:3": 0.016861677169799805,
+        "block100:0": 0.9281624555587769,
+        "block100:1": 0.7381630539894104,
+        "block100:2": 0.8947070240974426,
+        "block100:3": 0.018188245594501495,
+        "profile:0": 1.3771905899047852,
+        "profile:1": 0.565794825553894,
+        "profile:2": 0.7159109711647034,
+        "profile:3": 0.22838343679904938
+      },
+      "calibration_counts": {
+        "single:0": 1546,
+        "single:1": 1546,
+        "single:2": 1546,
+        "single:3": 1546,
+        "block20:0": 30920,
+        "block20:1": 30920,
+        "block20:2": 30920,
+        "block20:3": 30920,
+        "block100:0": 154600,
+        "block100:1": 154600,
+        "block100:2": 154600,
+        "block100:3": 154600,
+        "profile:0": 395776,
+        "profile:1": 395776,
+        "profile:2": 395776,
+        "profile:3": 395776
+      },
+      "tau_accept": 0.5615492463111877,
+      "tau_recover": 1.040419489145279,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.1529951375983789,
+          "target_std": 0.934532642364502,
+          "condition_proxy": 0.8470048624016211
+        },
+        "1": {
+          "cross_log_r2": 0.8179272076014877,
+          "target_std": 0.8894171714782715,
+          "condition_proxy": 0.18207279239851226
+        },
+        "2": {
+          "cross_log_r2": 0.7301175590585549,
+          "target_std": 0.8994883894920349,
+          "condition_proxy": 0.2698824409414451
+        },
+        "3": {
+          "cross_log_r2": -1.0,
+          "target_std": 0.8032283186912537,
+          "condition_proxy": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "geolink",
+      "seed": 3,
+      "train_sequences": 3043,
+      "calibration_sequences": 797,
+      "validation_sequences": 1083,
+      "train_seconds": 167.9380529000191,
+      "prediction_seconds": 60.11298010015162,
+      "parameters": 1324080,
+      "radii": {
+        "single:0": 0.13216537237167358,
+        "single:1": 0.060059696435928345,
+        "single:2": 0.10355226695537567,
+        "single:3": 0.013063818216323853,
+        "block20:0": 0.5496618747711182,
+        "block20:1": 0.33120226860046387,
+        "block20:2": 0.5584204196929932,
+        "block20:3": 0.024913549423217773,
+        "block100:0": 1.0021345615386963,
+        "block100:1": 0.8143236637115479,
+        "block100:2": 1.1095871925354004,
+        "block100:3": 0.04288235306739807,
+        "profile:0": 1.3082987070083618,
+        "profile:1": 0.6834558844566345,
+        "profile:2": 0.7281402349472046,
+        "profile:3": 0.17922501266002655
+      },
+      "calibration_counts": {
+        "single:0": 1594,
+        "single:1": 1594,
+        "single:2": 1594,
+        "single:3": 1594,
+        "block20:0": 31880,
+        "block20:1": 31880,
+        "block20:2": 31880,
+        "block20:3": 31880,
+        "block100:0": 159400,
+        "block100:1": 159400,
+        "block100:2": 159400,
+        "block100:3": 159400,
+        "profile:0": 408064,
+        "profile:1": 408064,
+        "profile:2": 408064,
+        "profile:3": 408064
+      },
+      "tau_accept": 0.6521970182657242,
+      "tau_recover": 1.1592650711536407,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.13307593992729239,
+          "target_std": 0.9420522451400757,
+          "condition_proxy": 0.8669240600727076
+        },
+        "1": {
+          "cross_log_r2": 0.77912463721802,
+          "target_std": 0.8720167279243469,
+          "condition_proxy": 0.22087536278197994
+        },
+        "2": {
+          "cross_log_r2": 0.7378016076197556,
+          "target_std": 0.8711869120597839,
+          "condition_proxy": 0.26219839238024445
+        },
+        "3": {
+          "cross_log_r2": -1.0,
+          "target_std": 0.7608680725097656,
+          "condition_proxy": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "geolink",
+      "seed": 4,
+      "train_sequences": 2998,
+      "calibration_sequences": 842,
+      "validation_sequences": 1083,
+      "train_seconds": 285.5683607000392,
+      "prediction_seconds": 42.123209300101735,
+      "parameters": 1324080,
+      "radii": {
+        "single:0": 0.18245887756347656,
+        "single:1": 0.10590535402297974,
+        "single:2": 0.1266336441040039,
+        "single:3": 0.028553083539009094,
+        "block20:0": 0.6319000124931335,
+        "block20:1": 0.30541908740997314,
+        "block20:2": 0.45017850399017334,
+        "block20:3": 0.02759382128715515,
+        "block100:0": 1.1162718534469604,
+        "block100:1": 0.671087920665741,
+        "block100:2": 0.8544594049453735,
+        "block100:3": 0.02755872905254364,
+        "profile:0": 1.3919706344604492,
+        "profile:1": 0.7844411134719849,
+        "profile:2": 0.754541277885437,
+        "profile:3": 0.1756071299314499
+      },
+      "calibration_counts": {
+        "single:0": 1684,
+        "single:1": 1684,
+        "single:2": 1684,
+        "single:3": 1684,
+        "block20:0": 33680,
+        "block20:1": 33680,
+        "block20:2": 33680,
+        "block20:3": 33680,
+        "block100:0": 168400,
+        "block100:1": 168400,
+        "block100:2": 168400,
+        "block100:3": 168400,
+        "profile:0": 431104,
+        "profile:1": 431104,
+        "profile:2": 431104,
+        "profile:3": 431104
+      },
+      "tau_accept": 0.6612909436225891,
+      "tau_recover": 1.1851965487003326,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.18957452521664164,
+          "target_std": 0.9244980216026306,
+          "condition_proxy": 0.8104254747833584
+        },
+        "1": {
+          "cross_log_r2": 0.7414376420768751,
+          "target_std": 0.8666012287139893,
+          "condition_proxy": 0.2585623579231249
+        },
+        "2": {
+          "cross_log_r2": 0.705953259012356,
+          "target_std": 0.8889876008033752,
+          "condition_proxy": 0.29404674098764405
+        },
+        "3": {
+          "cross_log_r2": -0.10453021222772052,
+          "target_std": 0.7249835729598999,
+          "condition_proxy": 1.0
+        }
+      }
+    }
+  ]
+}

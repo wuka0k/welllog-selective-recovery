@@ -1,0 +1,313 @@
+{
+  "dataset": "FORCE 2020 lithology",
+  "source": "https://github.com/bolgebrygg/Force-2020-Machine-Learning-competition/tree/master/lithology_competition/data",
+  "archive_sha256": "e996c8466f2d0dc7116daa71485cc90c31fcfac6345a5bb33165026478b642e9",
+  "seeds": 10,
+  "wells": 98,
+  "rows_complete": 721265,
+  "classes": 11,
+  "splits": [
+    {
+      "seed": 0,
+      "train_wells": 58,
+      "calibration_wells": 19,
+      "test_wells": 21,
+      "train_rows_sampled": 100000,
+      "test_rows_sampled": 20000,
+      "expert_metadata": {
+        "GR": {
+          "feature": "GR",
+          "cross_log_r2": 0.3039079380660137,
+          "conformal_radius_90": 39.8381896461826
+        },
+        "RHOB": {
+          "feature": "RHOB",
+          "cross_log_r2": 0.780884739502207,
+          "conformal_radius_90": 0.1721715406976143
+        },
+        "NPHI": {
+          "feature": "NPHI",
+          "cross_log_r2": 0.7464786969558985,
+          "conformal_radius_90": 0.10229022356279649
+        },
+        "DTC": {
+          "feature": "DTC",
+          "cross_log_r2": 0.8322958956730799,
+          "conformal_radius_90": 17.74401317285276
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "train_wells": 58,
+      "calibration_wells": 19,
+      "test_wells": 21,
+      "train_rows_sampled": 100000,
+      "test_rows_sampled": 20000,
+      "expert_metadata": {
+        "GR": {
+          "feature": "GR",
+          "cross_log_r2": 0.11617899744468263,
+          "conformal_radius_90": 41.07894361199823
+        },
+        "RHOB": {
+          "feature": "RHOB",
+          "cross_log_r2": 0.6824600968984271,
+          "conformal_radius_90": 0.16593869810037853
+        },
+        "NPHI": {
+          "feature": "NPHI",
+          "cross_log_r2": 0.668343752608523,
+          "conformal_radius_90": 0.10122650197922572
+        },
+        "DTC": {
+          "feature": "DTC",
+          "cross_log_r2": 0.834805850564069,
+          "conformal_radius_90": 14.03291947530127
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "train_wells": 58,
+      "calibration_wells": 19,
+      "test_wells": 21,
+      "train_rows_sampled": 100000,
+      "test_rows_sampled": 20000,
+      "expert_metadata": {
+        "GR": {
+          "feature": "GR",
+          "cross_log_r2": 0.17043250386163122,
+          "conformal_radius_90": 40.60846545262005
+        },
+        "RHOB": {
+          "feature": "RHOB",
+          "cross_log_r2": 0.7542731798954607,
+          "conformal_radius_90": 0.17376605653529165
+        },
+        "NPHI": {
+          "feature": "NPHI",
+          "cross_log_r2": 0.6296922879607633,
+          "conformal_radius_90": 0.10822643251484315
+        },
+        "DTC": {
+          "feature": "DTC",
+          "cross_log_r2": 0.8247513267849039,
+          "conformal_radius_90": 18.120275164435895
+        }
+      }
+    },
+    {
+      "seed": 3,
+      "train_wells": 58,
+      "calibration_wells": 19,
+      "test_wells": 21,
+      "train_rows_sampled": 100000,
+      "test_rows_sampled": 20000,
+      "expert_metadata": {
+        "GR": {
+          "feature": "GR",
+          "cross_log_r2": 0.17431272530040165,
+          "conformal_radius_90": 41.035098925659604
+        },
+        "RHOB": {
+          "feature": "RHOB",
+          "cross_log_r2": 0.701451071069861,
+          "conformal_radius_90": 0.19347676744985165
+        },
+        "NPHI": {
+          "feature": "NPHI",
+          "cross_log_r2": 0.6124572736222972,
+          "conformal_radius_90": 0.09969547318451277
+        },
+        "DTC": {
+          "feature": "DTC",
+          "cross_log_r2": 0.8373821849873305,
+          "conformal_radius_90": 16.50070971805789
+        }
+      }
+    },
+    {
+      "seed": 4,
+      "train_wells": 58,
+      "calibration_wells": 19,
+      "test_wells": 21,
+      "train_rows_sampled": 100000,
+      "test_rows_sampled": 20000,
+      "expert_metadata": {
+        "GR": {
+          "feature": "GR",
+          "cross_log_r2": 0.1756352307856539,
+          "conformal_radius_90": 46.394612816730856
+        },
+        "RHOB": {
+          "feature": "RHOB",
+          "cross_log_r2": 0.6752068570141119,
+          "conformal_radius_90": 0.1868903313551451
+        },
+        "NPHI": {
+          "feature": "NPHI",
+          "cross_log_r2": 0.5880954706481054,
+          "conformal_radius_90": 0.10876534500125479
+        },
+        "DTC": {
+          "feature": "DTC",
+          "cross_log_r2": 0.803541852632313,
+          "conformal_radius_90": 16.027804790449395
+        }
+      }
+    },
+    {
+      "seed": 5,
+      "train_wells": 58,
+      "calibration_wells": 19,
+      "test_wells": 21,
+      "train_rows_sampled": 100000,
+      "test_rows_sampled": 20000,
+      "expert_metadata": {
+        "GR": {
+          "feature": "GR",
+          "cross_log_r2": 0.2113979987956065,
+          "conformal_radius_90": 40.31514248907966
+        },
+        "RHOB": {
+          "feature": "RHOB",
+          "cross_log_r2": 0.7070408548172581,
+          "conformal_radius_90": 0.18001613789105564
+        },
+        "NPHI": {
+          "feature": "NPHI",
+          "cross_log_r2": 0.6364796475232837,
+          "conformal_radius_90": 0.10835499183921737
+        },
+        "DTC": {
+          "feature": "DTC",
+          "cross_log_r2": 0.8249801329308373,
+          "conformal_radius_90": 16.531318164795167
+        }
+      }
+    },
+    {
+      "seed": 6,
+      "train_wells": 58,
+      "calibration_wells": 19,
+      "test_wells": 21,
+      "train_rows_sampled": 100000,
+      "test_rows_sampled": 20000,
+      "expert_metadata": {
+        "GR": {
+          "feature": "GR",
+          "cross_log_r2": 0.14611779643219625,
+          "conformal_radius_90": 43.156832965090416
+        },
+        "RHOB": {
+          "feature": "RHOB",
+          "cross_log_r2": 0.7204567493352286,
+          "conformal_radius_90": 0.19169209517638208
+        },
+        "NPHI": {
+          "feature": "NPHI",
+          "cross_log_r2": 0.7201290577412731,
+          "conformal_radius_90": 0.10452656339730214
+        },
+        "DTC": {
+          "feature": "DTC",
+          "cross_log_r2": 0.8325599077579109,
+          "conformal_radius_90": 18.155892110814648
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "train_wells": 58,
+      "calibration_wells": 19,
+      "test_wells": 21,
+      "train_rows_sampled": 100000,
+      "test_rows_sampled": 20000,
+      "expert_metadata": {
+        "GR": {
+          "feature": "GR",
+          "cross_log_r2": 0.29374230234204324,
+          "conformal_radius_90": 40.36848953499952
+        },
+        "RHOB": {
+          "feature": "RHOB",
+          "cross_log_r2": 0.7731462601226157,
+          "conformal_radius_90": 0.18192717174089212
+        },
+        "NPHI": {
+          "feature": "NPHI",
+          "cross_log_r2": 0.7308403806454382,
+          "conformal_radius_90": 0.1022834043406099
+        },
+        "DTC": {
+          "feature": "DTC",
+          "cross_log_r2": 0.8464659663048932,
+          "conformal_radius_90": 16.47802119525558
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "train_wells": 58,
+      "calibration_wells": 19,
+      "test_wells": 21,
+      "train_rows_sampled": 100000,
+      "test_rows_sampled": 20000,
+      "expert_metadata": {
+        "GR": {
+          "feature": "GR",
+          "cross_log_r2": 0.0057183648035745716,
+          "conformal_radius_90": 46.1263865903834
+        },
+        "RHOB": {
+          "feature": "RHOB",
+          "cross_log_r2": 0.7280244482784637,
+          "conformal_radius_90": 0.18539523796365343
+        },
+        "NPHI": {
+          "feature": "NPHI",
+          "cross_log_r2": 0.6835638010812191,
+          "conformal_radius_90": 0.10267369795712111
+        },
+        "DTC": {
+          "feature": "DTC",
+          "cross_log_r2": 0.8148934233831664,
+          "conformal_radius_90": 18.12183437137675
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "train_wells": 58,
+      "calibration_wells": 19,
+      "test_wells": 21,
+      "train_rows_sampled": 100000,
+      "test_rows_sampled": 20000,
+      "expert_metadata": {
+        "GR": {
+          "feature": "GR",
+          "cross_log_r2": 0.1980898015945236,
+          "conformal_radius_90": 40.45899888275733
+        },
+        "RHOB": {
+          "feature": "RHOB",
+          "cross_log_r2": 0.7462031224599421,
+          "conformal_radius_90": 0.17822123172406035
+        },
+        "NPHI": {
+          "feature": "NPHI",
+          "cross_log_r2": 0.735793708674261,
+          "conformal_radius_90": 0.10668139170570501
+        },
+        "DTC": {
+          "feature": "DTC",
+          "cross_log_r2": 0.8368812123588769,
+          "conformal_radius_90": 18.140302405593403
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 82.56794450001325,
+  "note": "Geolink raw labels were blocked by the Google Drive network; this is an independent FORCE label audit, not a Geolink label reproduction."
+}

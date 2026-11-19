@@ -1,0 +1,262 @@
+{
+  "dataset": "FORCE 2020 lithology",
+  "split": "10 random well-disjoint train/calibration/test splits",
+  "classifier": "XGBoost multiclass",
+  "classes": 11,
+  "accepted_features": [
+    "RHOB",
+    "NPHI",
+    "DTC"
+  ],
+  "deferred_features": [
+    "GR"
+  ],
+  "recovery_feature_coverage": 0.75,
+  "oracle_macro_f1": 0.265475732147515,
+  "oracle_accuracy": 0.49894,
+  "accepted_feature_mean": {
+    "raw_missing": {
+      "accuracy": 0.3824266666666667,
+      "macro_f1": 0.13441587270992242,
+      "weighted_f1": 0.4187633889902432
+    },
+    "mean_fill": {
+      "accuracy": 0.35646666666666665,
+      "macro_f1": 0.18970863257752232,
+      "weighted_f1": 0.416736969920983
+    },
+    "cross_log": {
+      "accuracy": 0.4759683333333333,
+      "macro_f1": 0.2437548661927651,
+      "weighted_f1": 0.5373563311515774
+    }
+  },
+  "inference": {
+    "GR_cross_log_r2_range": [
+      0.0057183648035745,
+      0.3039079380660137
+    ],
+    "accepted_cross_log_r2_range": [
+      0.5880954706481054,
+      0.8464659663048932
+    ]
+  },
+  "paired_tests": [
+    {
+      "feature": "GR",
+      "baseline": "raw_missing",
+      "metric": "accuracy",
+      "n_pairs": 10,
+      "mean_delta": -0.1089899999999999,
+      "wins": 0,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "GR",
+      "baseline": "raw_missing",
+      "metric": "macro_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.104749420328298,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "GR",
+      "baseline": "raw_missing",
+      "metric": "weighted_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.0357683380731175,
+      "wins": 6,
+      "wilcoxon_p": 0.193359375
+    },
+    {
+      "feature": "GR",
+      "baseline": "mean_fill",
+      "metric": "accuracy",
+      "n_pairs": 10,
+      "mean_delta": 0.134665,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "GR",
+      "baseline": "mean_fill",
+      "metric": "macro_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.0554158331786327,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "GR",
+      "baseline": "mean_fill",
+      "metric": "weighted_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.1396570150206559,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "RHOB",
+      "baseline": "raw_missing",
+      "metric": "accuracy",
+      "n_pairs": 10,
+      "mean_delta": 0.247335,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "RHOB",
+      "baseline": "raw_missing",
+      "metric": "macro_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.1275792694570953,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "RHOB",
+      "baseline": "raw_missing",
+      "metric": "weighted_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.2519194175058667,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "RHOB",
+      "baseline": "mean_fill",
+      "metric": "accuracy",
+      "n_pairs": 10,
+      "mean_delta": 0.082855,
+      "wins": 9,
+      "wilcoxon_p": 0.00390625
+    },
+    {
+      "feature": "RHOB",
+      "baseline": "mean_fill",
+      "metric": "macro_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.0406054710093368,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "RHOB",
+      "baseline": "mean_fill",
+      "metric": "weighted_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.0904356145335264,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "NPHI",
+      "baseline": "raw_missing",
+      "metric": "accuracy",
+      "n_pairs": 10,
+      "mean_delta": 0.00955,
+      "wins": 4,
+      "wilcoxon_p": 0.845703125
+    },
+    {
+      "feature": "NPHI",
+      "baseline": "raw_missing",
+      "metric": "macro_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.1082686169077995,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "NPHI",
+      "baseline": "raw_missing",
+      "metric": "weighted_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.0567889968167683,
+      "wins": 6,
+      "wilcoxon_p": 0.083984375
+    },
+    {
+      "feature": "NPHI",
+      "baseline": "mean_fill",
+      "metric": "accuracy",
+      "n_pairs": 10,
+      "mean_delta": 0.0871849999999999,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "NPHI",
+      "baseline": "mean_fill",
+      "metric": "macro_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.0488805653414752,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "NPHI",
+      "baseline": "mean_fill",
+      "metric": "weighted_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.0967951185314434,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "DTC",
+      "baseline": "raw_missing",
+      "metric": "accuracy",
+      "n_pairs": 10,
+      "mean_delta": 0.02374,
+      "wins": 7,
+      "wilcoxon_p": 0.375
+    },
+    {
+      "feature": "DTC",
+      "baseline": "raw_missing",
+      "metric": "macro_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.0921690940836329,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "DTC",
+      "baseline": "raw_missing",
+      "metric": "weighted_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.0470704121613675,
+      "wins": 8,
+      "wilcoxon_p": 0.02734375
+    },
+    {
+      "feature": "DTC",
+      "baseline": "mean_fill",
+      "metric": "accuracy",
+      "n_pairs": 10,
+      "mean_delta": 0.188465,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "DTC",
+      "baseline": "mean_fill",
+      "metric": "macro_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.0726526644949162,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    },
+    {
+      "feature": "DTC",
+      "baseline": "mean_fill",
+      "metric": "weighted_f1",
+      "n_pairs": 10,
+      "mean_delta": 0.1746273506268133,
+      "wins": 10,
+      "wilcoxon_p": 0.001953125
+    }
+  ]
+}

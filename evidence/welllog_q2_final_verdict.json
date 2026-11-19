@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-15",
+  "verdict": "meets the stated Q2 non-OA mechanism-evidence gate for data-level selective recovery",
+  "primary_claim": "A well-disjoint, risk-controlled selective cross-log recovery operator recovers identifiable whole-log gaps, preserves about 90% conformal coverage, improves true-label lithology classification, and defers unidentifiable profile loss.",
+  "main_experiment": {
+    "datasets": ["teapot", "taranaki", "geolink"],
+    "folds": [0, 1, 2, 3, 4],
+    "seeds": [0, 1, 2, 3, 4],
+    "masks_per_seed": 5,
+    "raw_rows": 25000,
+    "significant_holm_tests": 21,
+    "taranaki_profile": {
+      "saits_selective_mae": 0.730231,
+      "proposed_selective_mae": 0.34978,
+      "relative_reduction": 0.521,
+      "coverage": 0.894745,
+      "interval_outside_rate": 0.102292,
+      "holm_p": 9.536743e-7,
+      "folds_supporting_proposed": 5
+    },
+    "geolink_profile": {
+      "saits_selective_mae": 0.602945,
+      "proposed_selective_mae": 0.335542,
+      "relative_reduction": 0.444,
+      "coverage": 0.891833,
+      "interval_outside_rate": 0.112958,
+      "holm_p": 9.536743e-7,
+      "folds_supporting_proposed": 5
+    },
+    "teapot_profile": {
+      "decision": "all defer",
+      "reason": "cross-log observability below 0.5"
+    }
+  },
+  "downstream_audit": {
+    "dataset": "FORCE 2020",
+    "well_splits": 10,
+    "wells": 98,
+    "classes": 11,
+    "accepted_features": ["RHOB", "NPHI", "DTC"],
+    "deferred_features": ["GR"],
+    "accepted_feature_macro_f1": {
+      "raw_missing": 0.134416,
+      "mean_fill": 0.189709,
+      "cross_log_recovery": 0.243755,
+      "oracle": 0.265476
+    },
+    "accepted_feature_accuracy": {
+      "raw_missing": 0.382427,
+      "mean_fill": 0.356467,
+      "cross_log_recovery": 0.475968,
+      "oracle": 0.49894
+    },
+    "paired_macro_f1_wilcoxon_p_vs_raw": 0.001953125,
+    "paired_macro_f1_wilcoxon_p_vs_mean_fill": 0.001953125,
+    "cross_log_r2": {
+      "GR": [0.005718, 0.303908],
+      "RHOB": [0.675207, 0.780885],
+      "NPHI": [0.588095, 0.746479],
+      "DTC": [0.803542, 0.837382]
+    },
+    "accepted_features_fraction": 0.75,
+    "note": "This is an independent FORCE label audit. Geolink raw labels were network-blocked and were not replaced by synthetic labels."
+  },
+  "ablation_boundary": {
+    "cross_log_expert": "necessary and significant",
+    "interval_only": "coverage without recovery routing",
+    "width_only_gate": "same decisions as observability gate on these datasets",
+    "independent_observability_gain": "not established"
+  },
+  "negative_results": [
+    "No stable five-fold improvement on 100-step block recovery.",
+    "Single-point and 20-step cases are mostly non-inferior.",
+    "Observability threshold could not be separated from width-only gating.",
+    "GR profile loss is not recovered because cross-log R^2 stays below 0.5.",
+    "Geolink label-specific downstream evaluation remains blocked by access to the author-hosted Google Drive archive."
+  ],
+  "runtime": {
+    "full_fivefold_wall_hours_approx": 1.8,
+    "gpu_task_hours_approx": 5.6,
+    "full_fivefold_within_one_hour": false,
+    "single_fold_three_datasets_within_one_hour": true
+  },
+  "provenance": {
+    "target_paper_doi": "10.1016/j.cageo.2024.105789",
+    "benchmark_repository": "https://github.com/uai-ufmg/well-log-imputation",
+    "benchmark_commit": "e69031ad97e19f6e36c0dddfc3db68ca2ce03716",
+    "processed_data_doi": "10.5281/zenodo.10987946",
+    "processed_data_license": "CC-BY-4.0",
+    "processed_data_sha256": "67A659043770FAB643D60D4D8FD674DA50D178797F49E664D8C9ABDC532A7AA6",
+    "force_repository": "https://github.com/bolgebrygg/Force-2020-Machine-Learning-competition",
+    "force_commit": "c8d01ee92c1c8e1ecba36f96cca6ea7b689338a1",
+    "force_train_zip_sha256": "E996C8466F2D0DC7116DAA71485CC90C31FCFAC6345A5BB33165026478B642E9",
+    "upstream_benchmark_license": "not declared; GitHub license endpoint returns 404"
+  },
+  "not_claimed": [
+    "complete reproduction of the original 480-experiment benchmark",
+    "closed-loop industrial control",
+    "universal superiority for all missing patterns",
+    "a Geolink-specific downstream label result"
+  ]
+}

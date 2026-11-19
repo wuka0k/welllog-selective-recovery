@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "checks": {
+    "fivefold_headline_metrics": true,
+    "paired_wilcoxon_holm": true,
+    "action_estimator_consistency": true,
+    "downstream_real_label_metrics": true,
+    "identifiability_boundary": true
+  },
+  "downstream_accepted_feature_means": {
+    "cross_log_recovery": {
+      "accuracy": 0.4759683333333334,
+      "macro_f1": 0.2437548661927651,
+      "weighted_f1": 0.5373563311515774
+    },
+    "raw_missing": {
+      "accuracy": 0.38242666666666664,
+      "macro_f1": 0.13441587270992245,
+      "weighted_f1": 0.41876338899024323
+    },
+    "mean_fill": {
+      "accuracy": 0.3564666666666667,
+      "macro_f1": 0.18970863257752227,
+      "weighted_f1": 0.41673696992098297
+    },
+    "oracle": {
+      "accuracy": 0.49894,
+      "macro_f1": 0.26547573214751496,
+      "weighted_f1": 0.5612390511052285
+    }
+  },
+  "cross_log_r2_ranges": {
+    "GR": [
+      0.0057183648035745,
+      0.3039079380660137
+    ],
+    "RHOB": [
+      0.6752068570141119,
+      0.780884739502207
+    ],
+    "NPHI": [
+      0.5880954706481054,
+      0.7464786969558985
+    ],
+    "DTC": [
+      0.803541852632313,
+      0.8464659663048932
+    ]
+  },
+  "oracle_macro_f1_gap": 0.02172086595474987,
+  "coverage_definition": "Empirical fraction of all masked test points whose error is inside the calibrated interval; defer cases remain in the denominator.",
+  "outside_rate_definition": "Among released pattern-feature groups, the fraction whose errors lie outside the calibrated interval. This is not a binary correctness error."
+}

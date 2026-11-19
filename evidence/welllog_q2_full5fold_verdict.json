@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-15",
+  "verdict": "meets the stated Q2 non-OA mechanism-evidence gate for data-level selective recovery",
+  "scope": {
+    "datasets": ["teapot", "taranaki", "geolink"],
+    "folds": [0, 1, 2, 3, 4],
+    "seeds": [0, 1, 2, 3, 4],
+    "masks_per_seed": 5,
+    "epochs_cap": 100,
+    "patience": 15,
+    "nominal_coverage": 0.9,
+    "well_group_split": true,
+    "raw_rows": 25000,
+    "fold_seed_pairs_per_method_condition": 25,
+    "significant_holm_tests": 21
+  },
+  "primary_hypothesis": {
+    "condition": "whole-log/profile missing",
+    "result": "supported",
+    "metrics": {
+      "taranaki": {
+        "saits_selective_mae": 0.730231,
+        "no_cross_expert_selective_mae": 0.690619,
+        "proposed_selective_mae": 0.34978,
+        "relative_reduction_vs_saits": 0.521,
+        "coverage": 0.894745,
+        "interval_outside_rate": 0.102292,
+        "defer_rate": 0.346667,
+        "saits_holm_p": 9.536743e-7,
+        "cliffs_delta": 1.0,
+        "folds_favoring_proposed": 5
+      },
+      "geolink": {
+        "saits_selective_mae": 0.602945,
+        "no_cross_expert_selective_mae": 0.76642,
+        "proposed_selective_mae": 0.335542,
+        "relative_reduction_vs_saits": 0.444,
+        "coverage": 0.891833,
+        "interval_outside_rate": 0.112958,
+        "defer_rate": 0.5,
+        "saits_holm_p": 9.536743e-7,
+        "cliffs_delta": 1.0,
+        "folds_favoring_proposed": 5
+      },
+      "teapot": {
+        "proposed_selective_mae": null,
+        "coverage": 0.886823,
+        "defer_rate": 1.0,
+        "boundary": "insufficient cross-log identifiability"
+      }
+    }
+  },
+  "ablation_conclusion": {
+    "cross_log_expert": "necessary; removing it significantly worsens selective MAE, coverage and interval-outside rate",
+    "interval_only": "provides coverage but no safe recovery decision",
+    "width_only_gate": "produces the same decisions as the observability-aware gate on these datasets",
+    "independent_observability_effect": "not established"
+  },
+  "negative_results": [
+    "100-step block recovery does not show a stable five-fold improvement",
+    "single-point and 20-step block results are mostly non-inferior or equal",
+    "the observability threshold has no independently identified gain beyond width gating"
+  ],
+  "runtime": {
+    "fold0_three_datasets_seconds": 1669.91632259998,
+    "fold1_2_wall_minutes_approx": 43,
+    "fold3_4_wall_minutes_approx": 38,
+    "complete_wall_hours_approx": 1.8,
+    "gpu_task_hours_approx": 5.6,
+    "full_fivefold_within_one_hour": false,
+    "single_fold_three_datasets_within_one_hour": true
+  },
+  "provenance": {
+    "benchmark_commit": "e69031ad97e19f6e36c0dddfc3db68ca2ce03716",
+    "processed_data_doi": "10.5281/zenodo.10987946",
+    "processed_data_sha256": "67A659043770FAB643D60D4D8FD674DA50D178797F49E664D8C9ABDC532A7AA6",
+    "upstream_benchmark_license": "not declared; GitHub license endpoint returns 404"
+  },
+  "not_claimed": [
+    "complete reproduction of all 480 original benchmark experiments",
+    "closed-loop industrial control degradation",
+    "universal superiority across all missing patterns",
+    "independent empirical benefit of the R^2 gate"
+  ]
+}

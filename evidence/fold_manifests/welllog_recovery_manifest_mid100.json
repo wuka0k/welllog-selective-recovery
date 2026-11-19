@@ -1,0 +1,938 @@
+{
+  "datasets": [
+    "teapot",
+    "taranaki",
+    "geolink"
+  ],
+  "seeds": 5,
+  "masks_per_seed": 5,
+  "epochs": 100,
+  "patience": 15,
+  "alpha": 0.1,
+  "elapsed_seconds": 1669.91632259998,
+  "torch": "2.15.0+cu132",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 3090 Ti",
+  "runs": [
+    {
+      "dataset": "teapot",
+      "seed": 0,
+      "train_sequences": 699,
+      "calibration_sequences": 153,
+      "validation_sequences": 252,
+      "train_seconds": 13.946005599980708,
+      "prediction_seconds": 3.364741699944716,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.13243582844734192,
+        "single:1": 0.22833766043186188,
+        "single:2": 0.040120989084243774,
+        "block20:0": 0.7458006143569946,
+        "block20:1": 0.7458876967430115,
+        "block20:2": 0.05368673801422119,
+        "block100:0": 1.3663954734802246,
+        "block100:1": 0.9853142499923706,
+        "block100:2": 0.07709947228431702,
+        "profile:0": 1.5682642459869385,
+        "profile:1": 1.2431862354278564,
+        "profile:2": 0.07514987140893936
+      },
+      "calibration_counts": {
+        "single:0": 306,
+        "single:1": 306,
+        "single:2": 306,
+        "block20:0": 6120,
+        "block20:1": 6120,
+        "block20:2": 6120,
+        "block100:0": 30600,
+        "block100:1": 30600,
+        "block100:2": 30600,
+        "profile:0": 78336,
+        "profile:1": 78336,
+        "profile:2": 78336
+      },
+      "tau_accept": 0.7818016797304155,
+      "tau_recover": 1.4572364211082458,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": -0.021992351164419777,
+          "target_std": 0.8383034467697144,
+          "condition_proxy": 1.0
+        },
+        "1": {
+          "cross_log_r2": -0.08690224615557063,
+          "target_std": 0.8389822840690613,
+          "condition_proxy": 1.0
+        },
+        "2": {
+          "cross_log_r2": -0.05412449954368337,
+          "target_std": 0.03345311060547829,
+          "condition_proxy": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "teapot",
+      "seed": 1,
+      "train_sequences": 696,
+      "calibration_sequences": 156,
+      "validation_sequences": 252,
+      "train_seconds": 20.424418599985074,
+      "prediction_seconds": 3.3607876000460237,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.13203614950180054,
+        "single:1": 0.20965373516082764,
+        "single:2": 0.021218180656433105,
+        "block20:0": 0.6146352291107178,
+        "block20:1": 0.7524672150611877,
+        "block20:2": 0.0263507142663002,
+        "block100:0": 1.2275938987731934,
+        "block100:1": 0.9335111379623413,
+        "block100:2": 0.037155792117118835,
+        "profile:0": 1.4947956800460815,
+        "profile:1": 1.2586013078689575,
+        "profile:2": 0.04726181924343109
+      },
+      "calibration_counts": {
+        "single:0": 312,
+        "single:1": 312,
+        "single:2": 312,
+        "block20:0": 6240,
+        "block20:1": 6240,
+        "block20:2": 6240,
+        "block100:0": 31200,
+        "block100:1": 31200,
+        "block100:2": 31200,
+        "profile:0": 79872,
+        "profile:1": 79872,
+        "profile:2": 79872
+      },
+      "tau_accept": 0.7796238034963608,
+      "tau_recover": 1.3648887753486632,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": -0.03726876941627566,
+          "target_std": 0.8545721769332886,
+          "condition_proxy": 1.0
+        },
+        "1": {
+          "cross_log_r2": -0.23078111947071678,
+          "target_std": 0.8393158912658691,
+          "condition_proxy": 1.0
+        },
+        "2": {
+          "cross_log_r2": 0.07421824211746886,
+          "target_std": 0.035199832171201706,
+          "condition_proxy": 0.9257817578825311
+        }
+      }
+    },
+    {
+      "dataset": "teapot",
+      "seed": 2,
+      "train_sequences": 690,
+      "calibration_sequences": 162,
+      "validation_sequences": 252,
+      "train_seconds": 15.927235800016206,
+      "prediction_seconds": 3.3587206999072805,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.11875784397125244,
+        "single:1": 0.21501818299293518,
+        "single:2": 0.028666898608207703,
+        "block20:0": 0.6892329454421997,
+        "block20:1": 0.8583027720451355,
+        "block20:2": 0.03901195526123047,
+        "block100:0": 1.0911390781402588,
+        "block100:1": 1.1424766778945923,
+        "block100:2": 0.054040491580963135,
+        "profile:0": 1.2598061561584473,
+        "profile:1": 1.1533784866333008,
+        "profile:2": 0.05052577704191208
+      },
+      "calibration_counts": {
+        "single:0": 324,
+        "single:1": 324,
+        "single:2": 324,
+        "block20:0": 6480,
+        "block20:1": 6480,
+        "block20:2": 6480,
+        "block100:0": 32400,
+        "block100:1": 32400,
+        "block100:2": 32400,
+        "profile:0": 82944,
+        "profile:1": 82944,
+        "profile:2": 82944
+      },
+      "tau_accept": 0.8932282179594041,
+      "tau_recover": 1.2012709379196167,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.05177789937789634,
+          "target_std": 0.8765026330947876,
+          "condition_proxy": 0.9482221006221037
+        },
+        "1": {
+          "cross_log_r2": 0.12222056568434991,
+          "target_std": 0.8207132816314697,
+          "condition_proxy": 0.8777794343156501
+        },
+        "2": {
+          "cross_log_r2": -0.13298223868495507,
+          "target_std": 0.034318022429943085,
+          "condition_proxy": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "teapot",
+      "seed": 3,
+      "train_sequences": 639,
+      "calibration_sequences": 213,
+      "validation_sequences": 252,
+      "train_seconds": 15.358378899982199,
+      "prediction_seconds": 3.353696400532499,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.1269223392009735,
+        "single:1": 0.16705363988876343,
+        "single:2": 0.020376719534397125,
+        "block20:0": 0.7139731049537659,
+        "block20:1": 0.7582783102989197,
+        "block20:2": 0.028589650988578796,
+        "block100:0": 1.2857420444488525,
+        "block100:1": 0.9625751376152039,
+        "block100:2": 0.035732075572013855,
+        "profile:0": 1.4603168964385986,
+        "profile:1": 1.0833042860031128,
+        "profile:2": 0.046335458755493164
+      },
+      "calibration_counts": {
+        "single:0": 426,
+        "single:1": 426,
+        "single:2": 426,
+        "block20:0": 8520,
+        "block20:1": 8520,
+        "block20:2": 8520,
+        "block100:0": 42600,
+        "block100:1": 42600,
+        "block100:2": 42600,
+        "profile:0": 109056,
+        "profile:1": 109056,
+        "profile:2": 109056
+      },
+      "tau_accept": 0.7889228343963623,
+      "tau_recover": 1.364300727844238,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.01163155224911594,
+          "target_std": 0.8641357421875,
+          "condition_proxy": 0.9883684477508841
+        },
+        "1": {
+          "cross_log_r2": 0.009610607724956699,
+          "target_std": 0.8503665328025818,
+          "condition_proxy": 0.9903893922750433
+        },
+        "2": {
+          "cross_log_r2": 0.05177448143566521,
+          "target_std": 0.03584376350045204,
+          "condition_proxy": 0.9482255185643348
+        }
+      }
+    },
+    {
+      "dataset": "teapot",
+      "seed": 4,
+      "train_sequences": 698,
+      "calibration_sequences": 154,
+      "validation_sequences": 252,
+      "train_seconds": 16.70135930000106,
+      "prediction_seconds": 3.364214500063099,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.15739859640598297,
+        "single:1": 0.21656596660614014,
+        "single:2": 0.02619205415248871,
+        "block20:0": 0.5797626972198486,
+        "block20:1": 0.7272401452064514,
+        "block20:2": 0.03496827185153961,
+        "block100:0": 1.4876892566680908,
+        "block100:1": 0.9472089409828186,
+        "block100:2": 0.04856841266155243,
+        "profile:0": 1.838771104812622,
+        "profile:1": 1.454230785369873,
+        "profile:2": 0.09044088423252106
+      },
+      "calibration_counts": {
+        "single:0": 308,
+        "single:1": 308,
+        "single:2": 308,
+        "block20:0": 6160,
+        "block20:1": 6160,
+        "block20:2": 6160,
+        "block100:0": 30800,
+        "block100:1": 30800,
+        "block100:2": 30800,
+        "profile:0": 78848,
+        "profile:1": 78848,
+        "profile:2": 78848
+      },
+      "tau_accept": 0.7602354645729066,
+      "tau_recover": 1.6456760883331296,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": -0.18812397719966345,
+          "target_std": 0.8407192230224609,
+          "condition_proxy": 1.0
+        },
+        "1": {
+          "cross_log_r2": -0.49231364728181215,
+          "target_std": 0.8363619446754456,
+          "condition_proxy": 1.0
+        },
+        "2": {
+          "cross_log_r2": -0.26519462153717566,
+          "target_std": 0.030088797211647034,
+          "condition_proxy": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "taranaki",
+      "seed": 0,
+      "train_sequences": 4338,
+      "calibration_sequences": 1205,
+      "validation_sequences": 1583,
+      "train_seconds": 208.14471750002122,
+      "prediction_seconds": 21.432256299711298,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.10900521278381348,
+        "single:1": 0.05790427327156067,
+        "single:2": 0.0672079473733902,
+        "block20:0": 0.4569680690765381,
+        "block20:1": 0.3059801459312439,
+        "block20:2": 0.5453333258628845,
+        "block100:0": 0.8480983376502991,
+        "block100:1": 0.6656368970870972,
+        "block100:2": 0.9587957859039307,
+        "profile:0": 1.3985265493392944,
+        "profile:1": 0.780208945274353,
+        "profile:2": 0.8902181386947632
+      },
+      "calibration_counts": {
+        "single:0": 2410,
+        "single:1": 2410,
+        "single:2": 2410,
+        "block20:0": 48200,
+        "block20:1": 48200,
+        "block20:2": 48200,
+        "block100:0": 241000,
+        "block100:1": 241000,
+        "block100:2": 241000,
+        "profile:0": 616960,
+        "profile:1": 616960,
+        "profile:2": 616960
+      },
+      "tau_accept": 0.7903923541307449,
+      "tau_recover": 1.156674629449844,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.20124946005878208,
+          "target_std": 0.9443009495735168,
+          "condition_proxy": 0.7987505399412179
+        },
+        "1": {
+          "cross_log_r2": 0.6540689918056213,
+          "target_std": 0.8531787395477295,
+          "condition_proxy": 0.3459310081943787
+        },
+        "2": {
+          "cross_log_r2": 0.6541641385717281,
+          "target_std": 0.9130041003227234,
+          "condition_proxy": 0.34583586142827194
+        }
+      }
+    },
+    {
+      "dataset": "taranaki",
+      "seed": 1,
+      "train_sequences": 4378,
+      "calibration_sequences": 1165,
+      "validation_sequences": 1583,
+      "train_seconds": 218.4240232000011,
+      "prediction_seconds": 16.888764100149274,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.05323980748653412,
+        "single:1": 0.030566513538360596,
+        "single:2": 0.0482921302318573,
+        "block20:0": 0.4325995445251465,
+        "block20:1": 0.2526699900627136,
+        "block20:2": 0.38801974058151245,
+        "block100:0": 0.7854697704315186,
+        "block100:1": 0.4755439758300781,
+        "block100:2": 0.7053492069244385,
+        "profile:0": 1.4185857772827148,
+        "profile:1": 0.6892009973526001,
+        "profile:2": 0.7941035032272339
+      },
+      "calibration_counts": {
+        "single:0": 2330,
+        "single:1": 2330,
+        "single:2": 2330,
+        "block20:0": 46600,
+        "block20:1": 46600,
+        "block20:2": 46600,
+        "block100:0": 233000,
+        "block100:1": 233000,
+        "block100:2": 233000,
+        "profile:0": 596480,
+        "profile:1": 596480,
+        "profile:2": 596480
+      },
+      "tau_accept": 0.6916232287883759,
+      "tau_recover": 1.0751205265522,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.14418213989580986,
+          "target_std": 0.9437832236289978,
+          "condition_proxy": 0.8558178601041901
+        },
+        "1": {
+          "cross_log_r2": 0.6592739308407976,
+          "target_std": 0.8862542510032654,
+          "condition_proxy": 0.34072606915920245
+        },
+        "2": {
+          "cross_log_r2": 0.6411553754577293,
+          "target_std": 0.9357321858406067,
+          "condition_proxy": 0.35884462454227073
+        }
+      }
+    },
+    {
+      "dataset": "taranaki",
+      "seed": 2,
+      "train_sequences": 4328,
+      "calibration_sequences": 1215,
+      "validation_sequences": 1583,
+      "train_seconds": 350.5308030999731,
+      "prediction_seconds": 16.72172919975128,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.07128715515136719,
+        "single:1": 0.06552940607070923,
+        "single:2": 0.06984841823577881,
+        "block20:0": 0.45910894870758057,
+        "block20:1": 0.2796005606651306,
+        "block20:2": 0.38121873140335083,
+        "block100:0": 0.9113603830337524,
+        "block100:1": 0.49877768754959106,
+        "block100:2": 0.6854367852210999,
+        "profile:0": 1.3169585466384888,
+        "profile:1": 0.6043128967285156,
+        "profile:2": 0.6561870574951172
+      },
+      "calibration_counts": {
+        "single:0": 2430,
+        "single:1": 2430,
+        "single:2": 2430,
+        "block20:0": 48600,
+        "block20:1": 48600,
+        "block20:2": 48600,
+        "block100:0": 243000,
+        "block100:1": 243000,
+        "block100:2": 243000,
+        "profile:0": 622080,
+        "profile:1": 622080,
+        "profile:2": 622080
+      },
+      "tau_accept": 0.6120940208435058,
+      "tau_recover": 1.0938795566558834,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.2815445453932971,
+          "target_std": 0.9252201318740845,
+          "condition_proxy": 0.7184554546067029
+        },
+        "1": {
+          "cross_log_r2": 0.6946629927513921,
+          "target_std": 0.8775734305381775,
+          "condition_proxy": 0.3053370072486079
+        },
+        "2": {
+          "cross_log_r2": 0.6920343030494938,
+          "target_std": 0.9433172345161438,
+          "condition_proxy": 0.30796569695050624
+        }
+      }
+    },
+    {
+      "dataset": "taranaki",
+      "seed": 3,
+      "train_sequences": 4342,
+      "calibration_sequences": 1201,
+      "validation_sequences": 1583,
+      "train_seconds": 127.67337889998453,
+      "prediction_seconds": 17.018993799749296,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.12853699922561646,
+        "single:1": 0.0457678884267807,
+        "single:2": 0.06255149841308594,
+        "block20:0": 0.4214022755622864,
+        "block20:1": 0.3159697651863098,
+        "block20:2": 0.448733389377594,
+        "block100:0": 0.8510257005691528,
+        "block100:1": 0.7024258375167847,
+        "block100:2": 0.8285479545593262,
+        "profile:0": 1.3502233028411865,
+        "profile:1": 0.6674116849899292,
+        "profile:2": 0.7659044861793518
+      },
+      "calibration_counts": {
+        "single:0": 2402,
+        "single:1": 2402,
+        "single:2": 2402,
+        "block20:0": 48040,
+        "block20:1": 48040,
+        "block20:2": 48040,
+        "block100:0": 240200,
+        "block100:1": 240200,
+        "block100:2": 240200,
+        "profile:0": 614912,
+        "profile:1": 614912,
+        "profile:2": 614912
+      },
+      "tau_accept": 0.7119476348161697,
+      "tau_recover": 1.0756646215915677,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.19545588997854002,
+          "target_std": 0.9349839687347412,
+          "condition_proxy": 0.80454411002146
+        },
+        "1": {
+          "cross_log_r2": 0.6923695753345431,
+          "target_std": 0.8780694603919983,
+          "condition_proxy": 0.30763042466545687
+        },
+        "2": {
+          "cross_log_r2": 0.6862854824721314,
+          "target_std": 0.9454275965690613,
+          "condition_proxy": 0.3137145175278686
+        }
+      }
+    },
+    {
+      "dataset": "taranaki",
+      "seed": 4,
+      "train_sequences": 4326,
+      "calibration_sequences": 1217,
+      "validation_sequences": 1583,
+      "train_seconds": 60.7224216000177,
+      "prediction_seconds": 17.688040500157513,
+      "parameters": 1322270,
+      "radii": {
+        "single:0": 0.05759769678115845,
+        "single:1": 0.07002913951873779,
+        "single:2": 0.054387807846069336,
+        "block20:0": 0.7057029008865356,
+        "block20:1": 0.5009332299232483,
+        "block20:2": 0.7606410384178162,
+        "block100:0": 1.208625078201294,
+        "block100:1": 0.988623857498169,
+        "block100:2": 1.2679836750030518,
+        "profile:0": 1.180320143699646,
+        "profile:1": 0.6540765166282654,
+        "profile:2": 0.6976268291473389
+      },
+      "calibration_counts": {
+        "single:0": 2434,
+        "single:1": 2434,
+        "single:2": 2434,
+        "block20:0": 48680,
+        "block20:1": 48680,
+        "block20:2": 48680,
+        "block100:0": 243400,
+        "block100:1": 243400,
+        "block100:2": 243400,
+        "profile:0": 623104,
+        "profile:1": 623104,
+        "profile:2": 623104
+      },
+      "tau_accept": 0.7948384612798691,
+      "tau_recover": 1.2353364467620849,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.25692530786307954,
+          "target_std": 0.960624098777771,
+          "condition_proxy": 0.7430746921369205
+        },
+        "1": {
+          "cross_log_r2": 0.7235820894634606,
+          "target_std": 0.8568729162216187,
+          "condition_proxy": 0.2764179105365394
+        },
+        "2": {
+          "cross_log_r2": 0.7413423272981415,
+          "target_std": 0.930934727191925,
+          "condition_proxy": 0.25865767270185847
+        }
+      }
+    },
+    {
+      "dataset": "geolink",
+      "seed": 0,
+      "train_sequences": 3036,
+      "calibration_sequences": 868,
+      "validation_sequences": 1019,
+      "train_seconds": 40.17422300000908,
+      "prediction_seconds": 14.82562520011561,
+      "parameters": 1324080,
+      "radii": {
+        "single:0": 0.21806812286376953,
+        "single:1": 0.17359018325805664,
+        "single:2": 0.12537264823913574,
+        "single:3": 0.0402492880821228,
+        "block20:0": 0.5927383899688721,
+        "block20:1": 0.39803069829940796,
+        "block20:2": 0.44453778862953186,
+        "block20:3": 0.0402652770280838,
+        "block100:0": 1.02391517162323,
+        "block100:1": 0.8685261011123657,
+        "block100:2": 0.8789809346199036,
+        "block100:3": 0.040996700525283813,
+        "profile:0": 1.3256902694702148,
+        "profile:1": 0.8787763714790344,
+        "profile:2": 0.7281197905540466,
+        "profile:3": 0.08663220703601837
+      },
+      "calibration_counts": {
+        "single:0": 1736,
+        "single:1": 1736,
+        "single:2": 1736,
+        "single:3": 1736,
+        "block20:0": 34720,
+        "block20:1": 34720,
+        "block20:2": 34720,
+        "block20:3": 34720,
+        "block100:0": 173600,
+        "block100:1": 173600,
+        "block100:2": 173600,
+        "block100:3": 173600,
+        "profile:0": 444416,
+        "profile:1": 444416,
+        "profile:2": 444416,
+        "profile:3": 444416
+      },
+      "tau_accept": 0.694274440407753,
+      "tau_recover": 1.0993589460849762,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.10342130697087704,
+          "target_std": 0.9571190476417542,
+          "condition_proxy": 0.896578693029123
+        },
+        "1": {
+          "cross_log_r2": 0.7349032654597688,
+          "target_std": 0.8683514595031738,
+          "condition_proxy": 0.2650967345402312
+        },
+        "2": {
+          "cross_log_r2": 0.7286870310909767,
+          "target_std": 0.9003319144248962,
+          "condition_proxy": 0.27131296890902334
+        },
+        "3": {
+          "cross_log_r2": -0.06141186085923267,
+          "target_std": 0.17786911129951477,
+          "condition_proxy": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "geolink",
+      "seed": 1,
+      "train_sequences": 3171,
+      "calibration_sequences": 733,
+      "validation_sequences": 1019,
+      "train_seconds": 47.69221800001105,
+      "prediction_seconds": 13.912151399825234,
+      "parameters": 1324080,
+      "radii": {
+        "single:0": 0.1894986629486084,
+        "single:1": 0.049780189990997314,
+        "single:2": 0.08769625425338745,
+        "single:3": 0.07828390598297119,
+        "block20:0": 0.8449954986572266,
+        "block20:1": 0.49134892225265503,
+        "block20:2": 0.48211705684661865,
+        "block20:3": 0.07800212502479553,
+        "block100:0": 1.3971565961837769,
+        "block100:1": 0.9405360817909241,
+        "block100:2": 0.8587103486061096,
+        "block100:3": 0.07870514690876007,
+        "profile:0": 1.5329777002334595,
+        "profile:1": 0.6899827718734741,
+        "profile:2": 0.8230603933334351,
+        "profile:3": 0.20415864884853363
+      },
+      "calibration_counts": {
+        "single:0": 1466,
+        "single:1": 1466,
+        "single:2": 1466,
+        "single:3": 1466,
+        "block20:0": 29320,
+        "block20:1": 29320,
+        "block20:2": 29320,
+        "block20:3": 29320,
+        "block100:0": 146600,
+        "block100:1": 146600,
+        "block100:2": 146600,
+        "block100:3": 146600,
+        "profile:0": 375296,
+        "profile:1": 375296,
+        "profile:2": 375296,
+        "profile:3": 375296
+      },
+      "tau_accept": 0.7897909879684448,
+      "tau_recover": 1.4311118721961975,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.13773396755959388,
+          "target_std": 0.9170706868171692,
+          "condition_proxy": 0.8622660324404061
+        },
+        "1": {
+          "cross_log_r2": 0.7372430175775178,
+          "target_std": 0.9102213978767395,
+          "condition_proxy": 0.26275698242248224
+        },
+        "2": {
+          "cross_log_r2": 0.6556221855278009,
+          "target_std": 0.9054753184318542,
+          "condition_proxy": 0.34437781447219906
+        },
+        "3": {
+          "cross_log_r2": -0.26310126807118217,
+          "target_std": 0.6752753257751465,
+          "condition_proxy": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "geolink",
+      "seed": 2,
+      "train_sequences": 3114,
+      "calibration_sequences": 790,
+      "validation_sequences": 1019,
+      "train_seconds": 51.882421499991324,
+      "prediction_seconds": 14.32455630012555,
+      "parameters": 1324080,
+      "radii": {
+        "single:0": 0.1437685489654541,
+        "single:1": 0.06834524869918823,
+        "single:2": 0.0968312919139862,
+        "single:3": 0.031510815024375916,
+        "block20:0": 0.7811082601547241,
+        "block20:1": 0.5915012359619141,
+        "block20:2": 0.7176594734191895,
+        "block20:3": 0.033037468791007996,
+        "block100:0": 1.2264890670776367,
+        "block100:1": 1.033886194229126,
+        "block100:2": 1.1453851461410522,
+        "block100:3": 0.03772743046283722,
+        "profile:0": 1.4001452922821045,
+        "profile:1": 0.6489806175231934,
+        "profile:2": 0.7173833250999451,
+        "profile:3": 0.2032458335161209
+      },
+      "calibration_counts": {
+        "single:0": 1580,
+        "single:1": 1580,
+        "single:2": 1580,
+        "single:3": 1580,
+        "block20:0": 31600,
+        "block20:1": 31600,
+        "block20:2": 31600,
+        "block20:3": 31600,
+        "block100:0": 158000,
+        "block100:1": 158000,
+        "block100:2": 158000,
+        "block100:3": 158000,
+        "profile:0": 404480,
+        "profile:1": 404480,
+        "profile:2": 404480,
+        "profile:3": 404480
+      },
+      "tau_accept": 0.7175904363393784,
+      "tau_recover": 1.2699031233787537,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.1904269419904393,
+          "target_std": 0.9180392622947693,
+          "condition_proxy": 0.8095730580095607
+        },
+        "1": {
+          "cross_log_r2": 0.7794867329592932,
+          "target_std": 0.898965060710907,
+          "condition_proxy": 0.22051326704070684
+        },
+        "2": {
+          "cross_log_r2": 0.7664840879815592,
+          "target_std": 0.8844011425971985,
+          "condition_proxy": 0.2335159120184408
+        },
+        "3": {
+          "cross_log_r2": -0.2976414402694716,
+          "target_std": 0.6396005153656006,
+          "condition_proxy": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "geolink",
+      "seed": 3,
+      "train_sequences": 3120,
+      "calibration_sequences": 784,
+      "validation_sequences": 1019,
+      "train_seconds": 41.27639139996609,
+      "prediction_seconds": 14.294430599780753,
+      "parameters": 1324080,
+      "radii": {
+        "single:0": 0.14440128207206726,
+        "single:1": 0.09437131881713867,
+        "single:2": 0.11407686769962311,
+        "single:3": 0.00940355658531189,
+        "block20:0": 0.564083993434906,
+        "block20:1": 0.3680814802646637,
+        "block20:2": 0.5978518128395081,
+        "block20:3": 0.02319192886352539,
+        "block100:0": 0.9999991655349731,
+        "block100:1": 0.9384372234344482,
+        "block100:2": 1.0618996620178223,
+        "block100:3": 0.036150045692920685,
+        "profile:0": 1.3576680421829224,
+        "profile:1": 0.6447217464447021,
+        "profile:2": 0.7886824607849121,
+        "profile:3": 0.10041136294603348
+      },
+      "calibration_counts": {
+        "single:0": 1568,
+        "single:1": 1568,
+        "single:2": 1568,
+        "single:3": 1568,
+        "block20:0": 31360,
+        "block20:1": 31360,
+        "block20:2": 31360,
+        "block20:3": 31360,
+        "block100:0": 156800,
+        "block100:1": 156800,
+        "block100:2": 156800,
+        "block100:3": 156800,
+        "profile:0": 401408,
+        "profile:1": 401408,
+        "profile:2": 401408,
+        "profile:3": 401408
+      },
+      "tau_accept": 0.6330042630434036,
+      "tau_recover": 1.1358417570590973,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": -0.023460468160013015,
+          "target_std": 0.9566949009895325,
+          "condition_proxy": 1.0
+        },
+        "1": {
+          "cross_log_r2": 0.7920406358949601,
+          "target_std": 0.8984509110450745,
+          "condition_proxy": 0.2079593641050399
+        },
+        "2": {
+          "cross_log_r2": 0.7042360146696083,
+          "target_std": 0.8926589488983154,
+          "condition_proxy": 0.2957639853303917
+        },
+        "3": {
+          "cross_log_r2": -0.03644291285262646,
+          "target_std": 0.565946638584137,
+          "condition_proxy": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "geolink",
+      "seed": 4,
+      "train_sequences": 3142,
+      "calibration_sequences": 762,
+      "validation_sequences": 1019,
+      "train_seconds": 101.15491270000348,
+      "prediction_seconds": 13.3406032002531,
+      "parameters": 1324080,
+      "radii": {
+        "single:0": 0.1813758909702301,
+        "single:1": 0.10281240940093994,
+        "single:2": 0.09894025325775146,
+        "single:3": 0.024040520191192627,
+        "block20:0": 0.4655405879020691,
+        "block20:1": 0.2581091523170471,
+        "block20:2": 0.40014147758483887,
+        "block20:3": 0.025280460715293884,
+        "block100:0": 0.9866281151771545,
+        "block100:1": 0.5733706951141357,
+        "block100:2": 0.7405993938446045,
+        "block100:3": 0.024593636393547058,
+        "profile:0": 1.402870774269104,
+        "profile:1": 0.5526063442230225,
+        "profile:2": 0.7343719005584717,
+        "profile:3": 0.15686430037021637
+      },
+      "calibration_counts": {
+        "single:0": 1524,
+        "single:1": 1524,
+        "single:2": 1524,
+        "single:3": 1524,
+        "block20:0": 30480,
+        "block20:1": 30480,
+        "block20:2": 30480,
+        "block20:3": 30480,
+        "block100:0": 152400,
+        "block100:1": 152400,
+        "block100:2": 152400,
+        "block100:3": 152400,
+        "profile:0": 390144,
+        "profile:1": 390144,
+        "profile:2": 390144,
+        "profile:3": 390144
+      },
+      "tau_accept": 0.5308399051427841,
+      "tau_recover": 1.090688779950142,
+      "diagnostics": {
+        "0": {
+          "cross_log_r2": 0.14091858778785504,
+          "target_std": 0.9335433840751648,
+          "condition_proxy": 0.859081412212145
+        },
+        "1": {
+          "cross_log_r2": 0.8173200775352114,
+          "target_std": 0.9013141989707947,
+          "condition_proxy": 0.1826799224647886
+        },
+        "2": {
+          "cross_log_r2": 0.7326834969873092,
+          "target_std": 0.8950482606887817,
+          "condition_proxy": 0.26731650301269083
+        },
+        "3": {
+          "cross_log_r2": -1.0,
+          "target_std": 0.6889278292655945,
+          "condition_proxy": 1.0
+        }
+      }
+    }
+  ]
+}
