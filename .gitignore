@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/
+models/
+outputs/
+force_data/
+*.npy
+*.npz
+*.zip
